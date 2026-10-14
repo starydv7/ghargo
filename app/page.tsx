@@ -530,7 +530,7 @@ export default function HomePage() {
         </div>
 
         <span className="copyright">
-          © {new Date().getFullYear()} GharGo. Made with care.
+          © 2026 GharGo. Made with care.
         </span>
       </footer>
     </main>
