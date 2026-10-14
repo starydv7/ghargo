@@ -1,0 +1,398 @@
+
+/* app/components/Navbar.css */
+
+.ghargo-announcement {
+    --gh-cream: #f7f6ef;
+    --gh-white: #fffefa;
+    --gh-green: #204b3b;
+    --gh-green-dark: #173a2f;
+    --gh-lime: #d8ff67;
+    --gh-muted: #718078;
+    --gh-border: #e7e8dc;
+  
+    min-height: 32px;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background: var(--gh-green-dark);
+    color: #f8f8ef;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+    text-align: center;
+  }
+  
+  .ghargo-navbar {
+    --gh-green: #204b3b;
+    --gh-green-dark: #173a2f;
+    --gh-lime: #d8ff67;
+    --gh-white: #fffefa;
+    --gh-border: #e7e8dc;
+  
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background: rgba(255, 254, 250, 0.97);
+    border-bottom: 1px solid rgba(32, 75, 59, 0.09);
+  }
+  
+  .ghargo-announcement .announcement-spark {
+    color: #d8ff67;
+    font-size: 14px;
+  }
+  
+  .ghargo-announcement .announcement-divider {
+    color: #a7b8a6;
+  }
+  
+  .ghargo-announcement .announcement-city {
+    color: #d8ffad;
+  }
+  
+  .ghargo-navbar .ghargo-navbar-inner {
+    width: min(1440px, 100%);
+    min-height: 88px;
+    margin: 0 auto;
+    padding: 0 5.2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .ghargo-navbar .ghargo-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #204b3b;
+  }
+  
+  .ghargo-navbar .ghargo-logo-mark {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    color: #fffefa;
+    background: #204b3b;
+    border-radius: 16px 16px 16px 5px;
+    box-shadow: 0 5px 13px rgba(32, 75, 59, 0.13);
+  }
+  
+  .ghargo-navbar .ghargo-logo-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .ghargo-navbar .ghargo-logo-copy strong {
+    color: #204b3b;
+    font-size: 27px;
+    font-weight: 850;
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+  
+  .ghargo-navbar .ghargo-logo-copy strong span {
+    color: #8aaa48;
+  }
+  
+  .ghargo-navbar .ghargo-logo-copy small {
+    color: #7b857c;
+    font-size: 8px;
+    font-weight: 750;
+    letter-spacing: 1.35px;
+  }
+  
+  .ghargo-navbar .ghargo-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .ghargo-navbar .ghargo-nav-link {
+    position: relative;
+    padding: 10px 0;
+    color: #68746c;
+    font-size: 12px;
+    font-weight: 650;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 180ms ease;
+  }
+  
+  .ghargo-navbar .ghargo-nav-link:hover,
+  .ghargo-navbar .ghargo-nav-link.active {
+    color: #204b3b;
+  }
+  
+  .ghargo-navbar .ghargo-nav-link.active::after {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: #a5c96b;
+    content: "";
+  }
+  
+  .ghargo-navbar .ghargo-nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 19px;
+    flex-shrink: 0;
+  }
+  
+  .ghargo-navbar .ghargo-location {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-right: 16px;
+    border-right: 1px solid #e7e8dc;
+  }
+  
+  .ghargo-navbar .ghargo-location-icon {
+    display: grid;
+    width: 35px;
+    height: 35px;
+    place-items: center;
+    border-radius: 50%;
+    background: #eff2e4;
+    color: #204b3b;
+    font-size: 20px;
+  }
+  
+  .ghargo-navbar .ghargo-location > span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .ghargo-navbar .ghargo-location small {
+    color: #899187;
+    font-size: 8px;
+    font-weight: 750;
+    letter-spacing: 0.8px;
+  }
+  
+  .ghargo-navbar .ghargo-location strong {
+    color: #204b3b;
+    font-size: 11px;
+    font-weight: 750;
+    white-space: nowrap;
+  }
+  
+  .ghargo-navbar .ghargo-location-chevron {
+    color: #829083;
+    font-size: 15px;
+  }
+  
+  .ghargo-navbar .ghargo-booking-link {
+    color: #204b3b;
+    font-size: 11px;
+    font-weight: 750;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .ghargo-navbar .ghargo-booking-link:hover {
+    color: #72913c;
+  }
+  
+  .ghargo-navbar .ghargo-primary-cta {
+    display: inline-flex;
+    min-height: 45px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 18px;
+    border: 1px solid #204b3b;
+    border-radius: 100px;
+    background: #204b3b;
+    color: #fffefa;
+    font-size: 11px;
+    font-weight: 750;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(32, 75, 59, 0.08);
+    transition: transform 180ms ease, background 180ms ease,
+      box-shadow 180ms ease;
+  }
+  
+  .ghargo-navbar .ghargo-primary-cta span {
+    color: #d8ff67;
+    font-size: 15px;
+  }
+  
+  .ghargo-navbar .ghargo-primary-cta:hover {
+    transform: translateY(-2px);
+    background: #173a2f;
+    box-shadow: 0 8px 18px rgba(32, 75, 59, 0.15);
+  }
+  
+  .ghargo-navbar .ghargo-menu-toggle,
+  .ghargo-navbar .ghargo-mobile-actions {
+    display: none;
+  }
+  
+  @media (max-width: 1150px) {
+    .ghargo-navbar .ghargo-navbar-inner {
+      gap: 18px;
+      padding-right: 3%;
+      padding-left: 3%;
+    }
+  
+    .ghargo-navbar .ghargo-nav-links {
+      gap: 19px;
+    }
+  
+    .ghargo-navbar .ghargo-nav-right {
+      gap: 12px;
+    }
+  
+    .ghargo-navbar .ghargo-location {
+      padding-right: 10px;
+    }
+  
+    .ghargo-navbar .ghargo-location-icon {
+      display: none;
+    }
+  
+    .ghargo-navbar .ghargo-logo-copy strong {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .ghargo-announcement {
+      min-height: 30px;
+      gap: 6px;
+      font-size: 9px;
+    }
+  
+    .ghargo-navbar .ghargo-navbar-inner {
+      min-height: 74px;
+      padding: 0 20px;
+    }
+  
+    .ghargo-navbar .ghargo-logo-mark {
+      width: 43px;
+      height: 43px;
+      border-radius: 14px 14px 14px 5px;
+    }
+  
+    .ghargo-navbar .ghargo-logo-mark svg {
+      width: 31px;
+      height: 31px;
+    }
+  
+    .ghargo-navbar .ghargo-logo-copy strong {
+      font-size: 24px;
+    }
+  
+    .ghargo-navbar .ghargo-logo-copy small {
+      font-size: 7px;
+      letter-spacing: 1.05px;
+    }
+  
+    .ghargo-navbar .ghargo-nav-right {
+      margin-left: auto;
+    }
+  
+    .ghargo-navbar .ghargo-location,
+    .ghargo-navbar .ghargo-nav-right > .ghargo-booking-link,
+    .ghargo-navbar .ghargo-nav-right > .ghargo-primary-cta {
+      display: none;
+    }
+  
+    .ghargo-navbar .ghargo-menu-toggle {
+      display: flex;
+      width: 43px;
+      height: 43px;
+      flex-shrink: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid #e2e6d8;
+      border-radius: 14px;
+      background: #f4f5eb;
+      cursor: pointer;
+    }
+  
+    .ghargo-navbar .ghargo-menu-toggle span {
+      width: 18px;
+      height: 2px;
+      border-radius: 5px;
+      background: #204b3b;
+      transition: transform 180ms ease;
+    }
+  
+    .ghargo-navbar .ghargo-menu-toggle.is-open span:first-child {
+      transform: translateY(4px) rotate(45deg);
+    }
+  
+    .ghargo-navbar .ghargo-menu-toggle.is-open span:last-child {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  
+    .ghargo-navbar .ghargo-nav-links {
+      position: absolute;
+      top: calc(100% + 1px);
+      right: 0;
+      left: 0;
+      display: none;
+      align-items: stretch;
+      flex-direction: column;
+      gap: 0;
+      padding: 12px 20px 22px;
+      border-bottom: 1px solid #e5e7dc;
+      background: #fffefa;
+      box-shadow: 0 18px 28px rgba(23, 58, 47, 0.09);
+    }
+  
+    .ghargo-navbar .ghargo-nav-links.ghargo-nav-open {
+      display: flex;
+    }
+  
+    .ghargo-navbar .ghargo-nav-link {
+      padding: 16px 5px;
+      border-bottom: 1px solid #f0f0e8;
+      font-size: 14px;
+    }
+  
+    .ghargo-navbar .ghargo-nav-link.active::after {
+      display: none;
+    }
+  
+    .ghargo-navbar .ghargo-mobile-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding-top: 20px;
+    }
+  
+    .ghargo-navbar .ghargo-mobile-actions .ghargo-booking-link {
+      padding: 8px 0;
+    }
+  
+    .ghargo-navbar .ghargo-mobile-actions .ghargo-primary-cta {
+      min-height: 50px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .ghargo-navbar .ghargo-primary-cta,
+    .ghargo-navbar .ghargo-nav-link,
+    .ghargo-navbar .ghargo-menu-toggle span {
+      transition: none;
+    }
+  }
+  
