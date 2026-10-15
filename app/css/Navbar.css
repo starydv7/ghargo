@@ -1,6 +1,26 @@
 
 /* app/components/Navbar.css */
 
+:root {
+  --ghargo-header-offset: 122px;
+}
+
+html {
+  scroll-padding-top: var(--ghargo-header-offset);
+}
+
+body {
+  padding-top: var(--ghargo-header-offset);
+}
+
+.ghargo-topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+
 .ghargo-announcement {
     --gh-cream: #f7f6ef;
     --gh-white: #fffefa;
@@ -34,7 +54,7 @@
     position: relative;
     z-index: 100;
     width: 100%;
-    background: rgba(255, 254, 250, 0.97);
+    background: #fffefa;
     border-bottom: 1px solid rgba(32, 75, 59, 0.09);
   }
   
@@ -270,6 +290,10 @@
   }
   
   @media (max-width: 850px) {
+    :root {
+      --ghargo-header-offset: 105px;
+    }
+
     .ghargo-announcement {
       min-height: 30px;
       gap: 6px;
