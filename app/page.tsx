@@ -110,7 +110,6 @@ const steps = [
 ];
 
 export default function HomePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [newsletterMessage, setNewsletterMessage] = useState("");
 
@@ -126,40 +125,6 @@ export default function HomePage() {
 
   return (
     <main className="ghargo">
-      {/* NAVIGATION */}
-      <header className="site-header">
-        <a className="brand" href="#" aria-label="GharGo home">
-          <span className="brand-symbol">g.</span>
-          <span>ghar<span className="brand-light">go</span></span>
-        </a>
-
-        <button
-          type="button"
-          className="mobile-menu-button"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
-
-        <nav className={menuOpen ? "main-nav nav-open" : "main-nav"}>
-          <a href="#services" onClick={() => setMenuOpen(false)}>
-            Explore services
-          </a>
-          <a href="#helpers" onClick={() => setMenuOpen(false)}>
-            Our helpers
-          </a>
-          <a href="#how-it-works" onClick={() => setMenuOpen(false)}>
-            How it works
-          </a>
-        </nav>
-
-        <a className="header-cta" href="#services">
-          Find home help <span>↗</span>
-        </a>
-      </header>
-
       {/* HERO */}
       <section className="hero section-shell">
         <div className="hero-copy">
